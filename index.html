@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tom Tailor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   -->
+    
+    <link rel="stylesheet" type="text/css"
+    href="https://company.tom-tailor.com/typo3temp/assets/compressed/merged-a9735cdca7a8315d98e3d61888384e71-437ff2bba29a516b876fdce353734dd4.css?1703245177"
+    media="all">
+
+  </hea8d>  
+  <body>
+    
+
+ 
+  <div class="page-navigation">
+    <div class="page-nav-item">
+      <a class="page-nav-link" onclick="scrollToSection(event, '#stores')">Our Stores</a>
+</div>
+    <div class="page-nav-item">
+      <a  class="page-nav-link" onclick="scrollToSection(event, '#storeLocator')">Store Locator</a>    
+    </div>  <div class="page-nav-item">
+      <a href="#" class="page-nav-link">Jobs</a>
+    </div>
+  </div>
+
+
+
+
+    <section class="main-section">
+      <a href="#" class="mainBtn">Join our store team </a>
+      <picture>
+        <source media="(min-width:1024px)" srcset="./assets/01.jpg" />
+        <img src="./assets/mob.jpg" class="main-section-img" />
+      </picture>
+    </section>
+
+    <section id="stores" class="full-screen">
+      <div class="content">
+        <h1>Our stores</h1>
+        <p>
+          From hamburg to the world. Our stores are meticulously designed to
+          offer a modular, spacious and effortless shopping experience.
+        </p>
+      </div>
+      <div class="ticker" id="ticker">
+        <div class="ticker-content">
+          <div class="slide">
+            <div class="image-container">
+              <img src="./assets/01.jpg" alt="Image 1" />
+              <div class="blue-overlay"></div>
+              <div class="overlay-text">The Haven</div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-container">
+              <img src="./assets/02.jpg" alt="Image 2" />
+              <div class="blue-overlay"></div>
+              <div class="overlay-text">The Fitting Rooms</div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-container">
+              <img src="./assets/03.jpg" alt="Image 2" />
+              <div class="blue-overlay"></div>
+              <div class="overlay-text">The open facade</div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-container">
+              <img src="./assets/04.jpg" alt="Image 2" />
+              <div class="blue-overlay"></div>
+              <div class="overlay-text">The open facade</div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-container">
+              <img src="./assets/05.jpg" alt="Image 2" />
+              <div class="blue-overlay"></div>
+              <div class="overlay-text">The Fitting Rooms</div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-container">
+              <img src="./assets/06.jpg" alt="Image 2" />
+              <div class="blue-overlay"></div>
+              <div class="overlay-text">The open facade</div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-container">
+              <img src="./assets/07.jpg" alt="Image 2" />
+              <div class="blue-overlay"></div>
+              <div class="overlay-text">The open facade</div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-container">
+              <img src="./assets/08.jpg" alt="Image 2" />
+              <div class="blue-overlay"></div>
+              <div class="overlay-text">The open facade</div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-container">
+              <img src="./assets/09.jpg" alt="Image 2" />
+              <div class="blue-overlay"></div>
+              <div class="overlay-text">The open facade</div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-container">
+              <img src="./assets/10.jpg" alt="Image 2" />
+              <div class="blue-overlay"></div>
+              <div class="overlay-text">The open facade</div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-container">
+              <img src="./assets/11.jpg" alt="Image 2" />
+              <div class="blue-overlay"></div>
+              <div class="overlay-text">The open facade</div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image-container">
+              <img src="./assets/12.jpg" alt="Image 2" />
+              <div class="blue-overlay"></div>
+              <div class="overlay-text">The open facade</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="store-locator" id="storeLocator">
+      <div class="search-bar">
+        <div class="store-locator-title"><h2>Store locator</h2></div>
+        <div class="search-suggestions">
+          <div class="search-container">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Enter a Postcode or Address"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-search"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          <div id="suggestions"></div>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+      <button type="button" id="expandButton">Expand &#8599</button>
+
+      <div class="card-container" id="cardContainer">
+        <!-- Cards will be dynamically added here -->
+      </div>
+    </section>
+
+  
+    <script src="script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaXNfik0Mi1P24_467aCFoak_7PWWjvQY&callback=initMap"
+      async
+      defer
+    ></script>
+      </body>
+</html>
